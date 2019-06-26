@@ -1,6 +1,6 @@
 A simple reverse engineering to remove ads.
 
-[![Chess](https://img.shields.io/badge/Giganima-v3-green.svg)](https://play.google.com/store/apps/details?id=com.jetstartgames.chess)
+[![Chess](https://img.shields.io/badge/Chess-v2.5.9-green.svg)](https://play.google.com/store/apps/details?id=com.jetstartgames.chess)
 
 Changes from standard application distributed in Google Play Store are in log.diff.
 
