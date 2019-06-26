@@ -1,0 +1,48 @@
+Only in src-mod/: build
+diff -r src/smali/com/google/android/gms/ads/AdLoader.smali src-mod/smali/com/google/android/gms/ads/AdLoader.smali
+133c133
+<     invoke-virtual {p1}, Lcom/google/android/gms/ads/AdRequest;->zzde()Lcom/google/android/gms/internal/ads/x;
+---
+>     # invoke-virtual {p1}, Lcom/google/android/gms/ads/AdRequest;->zzde()Lcom/google/android/gms/internal/ads/x;
+135c135
+<     move-result-object p1
+---
+>     # move-result-object p1
+137c137
+<     invoke-direct {p0, p1}, Lcom/google/android/gms/ads/AdLoader;->a(Lcom/google/android/gms/internal/ads/x;)V
+---
+>     # invoke-direct {p0, p1}, Lcom/google/android/gms/ads/AdLoader;->a(Lcom/google/android/gms/internal/ads/x;)V
+145c145
+<     invoke-virtual {p1}, Lcom/google/android/gms/ads/doubleclick/PublisherAdRequest;->zzde()Lcom/google/android/gms/internal/ads/x;
+---
+>     # invoke-virtual {p1}, Lcom/google/android/gms/ads/doubleclick/PublisherAdRequest;->zzde()Lcom/google/android/gms/internal/ads/x;
+147c147
+<     move-result-object p1
+---
+>     # move-result-object p1
+149c149
+<     invoke-direct {p0, p1}, Lcom/google/android/gms/ads/AdLoader;->a(Lcom/google/android/gms/internal/ads/x;)V
+---
+>     # invoke-direct {p0, p1}, Lcom/google/android/gms/ads/AdLoader;->a(Lcom/google/android/gms/internal/ads/x;)V
+diff -r src/smali/com/google/android/gms/ads/AdView.smali src-mod/smali/com/google/android/gms/ads/AdView.smali
+124c124
+<     invoke-super {p0, p1}, Lcom/google/android/gms/ads/BaseAdView;->loadAd(Lcom/google/android/gms/ads/AdRequest;)V
+---
+>     # invoke-super {p0, p1}, Lcom/google/android/gms/ads/BaseAdView;->loadAd(Lcom/google/android/gms/ads/AdRequest;)V
+diff -r src/smali/com/google/android/gms/ads/InterstitialAd.smali src-mod/smali/com/google/android/gms/ads/InterstitialAd.smali
+105c105
+<     iget-object v0, p0, Lcom/google/android/gms/ads/InterstitialAd;->a:Lcom/google/android/gms/internal/ads/ab;
+---
+>     # iget-object v0, p0, Lcom/google/android/gms/ads/InterstitialAd;->a:Lcom/google/android/gms/internal/ads/ab;
+107c107
+<     invoke-virtual {p1}, Lcom/google/android/gms/ads/AdRequest;->zzde()Lcom/google/android/gms/internal/ads/x;
+---
+>     # invoke-virtual {p1}, Lcom/google/android/gms/ads/AdRequest;->zzde()Lcom/google/android/gms/internal/ads/x;
+109c109
+<     move-result-object p1
+---
+>     # move-result-object p1
+111c111
+<     invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/ads/ab;->a(Lcom/google/android/gms/internal/ads/x;)V
+---
+>     # invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/ads/ab;->a(Lcom/google/android/gms/internal/ads/x;)V

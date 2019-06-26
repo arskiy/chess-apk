@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/topLayout" android:background="@drawable/bg2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/boardLayout" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/out" android:layout_below="@id/spinnerLayout">
+        <RelativeLayout android:id="@id/views" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <view android:id="@id/chessboard" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" class="com.jetstartgames.logic.ChessBoardPlay" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/spinnerLayout" android:background="#b4000000" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="0.0dip" android:layout_alignParentTop="true" android:soundEffectsEnabled="false">
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:text="CHECKERS" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:id="@id/level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="6.0dip" android:text="CHECKERS" android:layout_below="@id/type" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/out" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="17.0dip" android:layout_above="@id/textInfo">
+        <LinearLayout android:orientation="horizontal" android:id="@id/newButtonLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/button_new_game" android:background="@drawable/btn_new2" android:layout_width="38.0dip" android:layout_height="38.0dip" android:soundEffectsEnabled="false" android:onClick="newGamePressed" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/button_back" android:background="@drawable/btn_undo2" android:layout_width="38.0dip" android:layout_height="38.0dip" android:soundEffectsEnabled="false" android:onClick="backClicked" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/button_info" android:background="@drawable/btn_info2" android:layout_width="38.0dip" android:layout_height="38.0dip" android:soundEffectsEnabled="false" android:onClick="infoPressed" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/button_rate" android:background="@drawable/btn_menu2" android:layout_width="38.0dip" android:layout_height="38.0dip" android:soundEffectsEnabled="false" android:onClick="menuClicked" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#b4ffffff" android:gravity="center" android:id="@id/textInfo" android:background="@drawable/info" android:padding="3.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:text="info" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/wait" android:background="#a0000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/viewMode" android:background="#00000000" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:onClick="viewPressed" />
+</RelativeLayout>

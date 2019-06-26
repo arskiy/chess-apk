@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/alert_border" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textColor="#ffffffff" android:id="@id/starButton" android:background="@drawable/warning_undo" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:layout_alignParentLeft="true" android:soundEffectsEnabled="false" />
+        <TextView android:textColor="#ffffffff" android:id="@id/title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="10.0dip" android:layout_toLeftOf="@id/viewButton" android:layout_toRightOf="@id/starButton" />
+        <Button android:textColor="#ffffffff" android:gravity="right" android:id="@id/viewButton" android:background="@drawable/view" android:visibility="invisible" android:layout_width="40.0dip" android:layout_height="28.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:soundEffectsEnabled="false" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/data" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/title_line">
+        <ImageView android:id="@id/image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/dataText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/image">
+            <TextView android:textColor="#ffffffff" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/data">
+        <Button android:textColor="#ffffffff" android:id="@id/positiveButton" android:background="@drawable/button_green" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:layout_weight="1.0" android:soundEffectsEnabled="false" />
+        <Button android:textColor="#ffffffff" android:id="@id/neutralButton" android:background="@drawable/button_neutral" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:layout_weight="1.0" android:soundEffectsEnabled="false" />
+        <Button android:textColor="#ffffffff" android:id="@id/negativeButton" android:background="@drawable/button_blue" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:layout_weight="1.0" android:soundEffectsEnabled="false" />
+    </LinearLayout>
+</RelativeLayout>
